@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>MVC_with_EF</RootNamespace>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Context\" />
+    <Folder Include="Context\Models\" />
+    <Folder Include="Views\Author\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\fontawesome\svgs\brands\creative-commons-nd.svg" />
+    <Content Remove="wwwroot\lib\fontawesome\svgs\brands\dyalog.svg" />
+    <Content Remove="wwwroot\lib\fontawesome\svgs\brands\squarespace.svg" />
+    <Content Remove="wwwroot\lib\fontawesome\svgs\brands\google-plus-square.svg" />
+    <Content Remove="wwwroot\lib\fontawesome\svgs\brands\whatsapp-square.svg" />
+    <Content Remove="wwwroot\lib\fontawesome-free-5.10.2-web\less\_bordered-pulled.less" />
+    <Content Remove="wwwroot\lib\fontawesome-free-5.10.2-web\less\_core.less" />
+  </ItemGroup>
+</Project>
